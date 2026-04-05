@@ -156,15 +156,17 @@ h1 {
 <!-- JARAK -->
 <div style="height:15px;"></div>
 
-<!-- IKLAN BARU (MAGSERV / ADPROVIDER) -->
-<div style="text-align:center; margin-bottom:20px;">
+<!-- IKLAN BARU -->
+<div style="text-align:center; margin:20px 0;">
     <ins class="eas6a97888e2" data-zoneid="5891786"></ins>
 </div>
 
-<!-- SCRIPT WAJIB -->
-<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
+<script src="https://a.magsrv.com/ad-provider.js"></script>
 <script>
-    (AdProvider = window.AdProvider || []).push({"serve": {}});
+window.AdProvider = window.AdProvider || [];
+window.AdProvider.push({
+    serve: {}
+});
 </script>
 </body>
 
